@@ -20,7 +20,7 @@
   "license": "EPL-2.0",
   "dependencies": {
     "@eclipse-che/api": "^7.38.1",
-    "axios": "^0.24.0"
+    "axios": "^0.31.1"
   },
   "devDependencies": {
     "@types/jest": "22.1.3",
