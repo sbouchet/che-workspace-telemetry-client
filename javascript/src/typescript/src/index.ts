@@ -71,7 +71,7 @@ class RequestError implements IRequestError {
     status: number | undefined;
     name: string;
     message: string;
-    config: AxiosRequestConfig;
+    config: AxiosRequestConfig | undefined;
     request: any;
     response: AxiosResponse | undefined;
 
