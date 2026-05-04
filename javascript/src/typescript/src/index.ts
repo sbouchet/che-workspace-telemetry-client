@@ -61,7 +61,7 @@ export interface IResponse<T> extends AxiosResponse<T> {
 
 export interface IRequestError extends Error {
     status?: number;
-    config: AxiosRequestConfig;
+    config?: AxiosRequestConfig;
     request?: any;
     response?: IResponse<any>;
 }
@@ -71,7 +71,7 @@ class RequestError implements IRequestError {
     status: number | undefined;
     name: string;
     message: string;
-    config: AxiosRequestConfig | undefined;
+    config?: AxiosRequestConfig;
     request: any;
     response: AxiosResponse | undefined;
 
