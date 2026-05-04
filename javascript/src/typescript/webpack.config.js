@@ -10,6 +10,7 @@ var server = {
                 use: [
                     {
                         loader: 'ts-loader',
+                        options: { transpileOnly: true }
                     }
                 ],
                 exclude: /node_modules/
@@ -39,6 +40,7 @@ var client = {
                 use: [
                     {
                         loader: 'ts-loader',
+                        options: { transpileOnly: true }
                     }
                 ],
                 exclude: /node_modules/
