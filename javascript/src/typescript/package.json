@@ -53,7 +53,8 @@
     ]
   },
   "resolutions": {
-    "node-releases": "2.0.19"
+    "node-releases": "2.0.19",
+    "minimatch": "9.0.9"
   },
   "repository": {
     "type": "git",
