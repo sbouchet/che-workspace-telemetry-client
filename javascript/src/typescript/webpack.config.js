@@ -1,4 +1,5 @@
 const path = require('path');
+// Webpack 4 uses md4 which OpenSSL 3.0+ (Node 17+) removed; redirect to sha256. Remove when upgrading to Webpack 5.
 const crypto = require('crypto');
 const cryptoOrigCreateHash = crypto.createHash;
 crypto.createHash = algorithm => cryptoOrigCreateHash(algorithm === 'md4' ? 'sha256' : algorithm);
